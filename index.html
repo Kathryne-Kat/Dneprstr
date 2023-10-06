@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DneprStroy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header section-s">
+      <div class="header-mobil-top row container">
+        <div class="header-logo-mob logo"><a href="/">DneprStroy</a></div>
+        <div class="menu-tel-mob">
+          <a href="tel:+380974518415">(097) 451 84 15</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-container row">
+          <div class="header-logo logo"><a href="/">DneprStroy</a></div>
+          <nav class="header-menu">
+            <ul class="header-menu-list row">
+              <li><a href="/">Главная</a></li>
+              <li><a href="/repair-page.html">Услуги</a></li>
+              <li><a href="/about-page.html">О нас</a></li>
+              <li><a href="/blog-page.html">Блог</a></li>
+              <li><a href="#contacts-id">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="row">
+            <div class="menu-tel">
+              <a href="tel:+380974518415">(097) 451 84 15</a>
+            </div>
+            <button class="menu-btn btn popup-open" type="button">
+              Рассчитать стоимость
+            </button>
+          </div>
+          <div class="header-burger">
+            <img src="./img/icon/burger.svg" alt="меню" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-menu-wrap">
+          <button class="button-x mobile-menu-close" type="button">
+            <img src="./img/icon/X.svg" alt="іконка" />
+          </button>
+          <div class="mobile-menu-logo logo"><a href="/">DneprStroy</a></div>
+          <nav class="header-menu-mob">
+            <ul class="mobile-menu-list">
+              <li><a href="/">Главная</a></li>
+              <li><a href="/repair-page.html">Услуги</a></li>
+              <li><a href="/about-page.html">О нас</a></li>
+              <li><a href="/blog-page.html">Блог</a></li>
+              <li><a href="#contacts-id">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <section class="hero section-s">
+        <div class="hero-container">
+          <h3 class="hero-subtitle">
+            Создадим пространство, о котором вы всегда мечтали!
+          </h3>
+          <h1 class="hero-title">
+            Оставь заявку и получи детальный расчет или смету
+          </h1>
+          <div class="hero-btn-row row">
+            <a href="./heating-page.html" class="hero-btn"
+              ><img
+                class="hero-btn-img"
+                src="./img/icon/Check.svg"
+                alt="icon"
+              />
+              Автономное отопление и теплый пол
+            </a>
+            <a href="./repair-page.html" class="hero-btn">
+              <img class="hero-btn-img" src="./img/icon/Check.svg" alt="icon" />
+              Ремонт квартир под ключ
+            </a>
+
+            <a href="./plumbing-page.html" class="hero-btn" type="button"
+              ><img
+                class="hero-btn-img"
+                src="./img/icon/Check.svg"
+                alt="icon"
+              />
+              Cантехника (монтаж, установка)
+            </a>
+          </div>
+          <div class="hero-form">
+            <form action="#">
+              <input type="text" placeholder="Ваше имя" />
+              <input type="text" placeholder="Ваш телефон" />
+              <div class="hero-btn-blur">
+                <button class="hero-btn-blue" type="submit">
+                  Оставить заявку
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="request-calc-mob section-b">
+        <div class="request-new request-new-mob">
+          <div>
+            <h2 class="steps-title section-title">Оставьте заявку</h2>
+            <p class="repair-request-text">
+              узнайте прямо сейчас, сколько будет стоить ваш ремонт мечты
+            </p>
+            <form class="repair-request-form" action="#">
+              <input type="text" placeholder="Ваше имя" />
+              <input type="tel" placeholder="Ваш телефон" />
+              <input
+                type="text"
+                placeholder="Расскажите подробнее об объекте"
+              />
+              <button class="paperclip" type="button">
+                <img src="./img/icon/Paperclip.svg" alt="btn" />
+              </button>
+              <div class="request-calc-btn-blur-o btn-blur-o">
+                <button
+                  class="request-calc-btn-blue-o btn-blue-o"
+                  type="button"
+                >
+                  Оставить заявку
+                </button>
+              </div>
+            </form>
+          </div>
+          <img class="request-new-img" src="./img/letter.png" alt="letter" />
+        </div>
+      </section>
+      <section class="advantages section-b">
+        <ul class="advantages-container">
+          <li class="advantages-item">
+            <img class="advantages-item-img"" src="./img/icon/advan1.svg"
+            alt="icon" />
+            <h3 class="advantages-item-title title-item">
+              Высший стандарт качества:
+            </h3>
+            <p class="advantages-item-text text-item">
+              Все детали вашего проекта создаются с максимальной тщательностью и
+              профессионализмом, обеспечивая непревзойденное качество.
+            </p>
+          </li>
+          <li class="advantages-item">
+            <img
+              class="advantages-item-img"
+              src="./img/icon/advan2.svg"
+              alt="icon"
+            />
+            <h3 class="advantages-item-title title-item">Cоблюдение сроков:</h3>
+            <p class="advantages-item-text text-item">
+              Мы ценим ваше время и строго фиксируем обязательства по срокам в
+              договоре, что гарантирует точное соблюдение графика выполнения
+              работ.
+            </p>
+          </li>
+          <li class="advantages-item">
+            <img
+              class="advantages-item-img"
+              src="./img/icon/advan3.svg"
+              alt="icon"
+            />
+            <h3 class="advantages-item-title title-item">
+              Индивидуальный подход:
+            </h3>
+            <p class="advantages-item-text text-item">
+              Мы понимаем уникальность каждого проекта и предоставляем
+              персонализированные решения, соответствующие вашим потребностям.
+            </p>
+          </li>
+          <li class="advantages-item">
+            <img
+              class="advantages-item-img"
+              src="./img/icon/advan4.svg"
+              alt="icon"
+            />
+            <h3 class="advantages-item-title title-item">
+              Прозрачность и честность:
+            </h3>
+            <p class="advantages-item-text text-item">
+              Мы всегда работаем открыто и честно, предоставляя детальные отчеты
+              о проделанных работах и расходах, чтобы вы всегда были в курсе
+              процесса и финансов.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="services section-s">
+        <h2 class="services-title section-title">Услуги</h2>
+        <ul class="services-list section-list">
+          <li class="services-item section-item">
+            <img
+              class="services-item-img"
+              src="./img/services1.jpg"
+              alt="photo"
+            />
+            <div class="services-row row">
+              <div class="services-item-descr">
+                <h3 class="services-item-title title-item">
+                  Ремонт квартир под ключ
+                </h3>
+                <p class="services-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой. Мы берем на себя все
+                  заботы, чтобы превратить вашу квартиру в идеальное жилье.
+                </p>
+              </div>
+              <div class="services-btn-blur btn-blur btn-blur-mob">
+                <button
+                  class="services-btn btn-blue btn-blue-mob popup-open"
+                  type="button"
+                >
+                  Узнать стоимость
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="services-item section-item">
+            <img
+              class="services-item-img"
+              src="./img/services2.jpg"
+              alt="photo"
+            />
+            <div class="services-row row">
+              <div class="services-item-descr">
+                <h3 class="services-item-title title-item">
+                  Автономное отопление и теплый пол
+                </h3>
+                <p class="services-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой. Мы берем на себя все
+                  заботы, чтобы превратить вашу квартиру в идеальное жилье.
+                </p>
+              </div>
+              <div class="services-btn-blur btn-blur btn-blur-mob">
+                <button
+                  class="services-btn btn-blue btn-blue-mob popup-open"
+                  type="button"
+                >
+                  Узнать стоимость
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="services-item section-item">
+            <img
+              class="services-item-img"
+              src="./img/services3.jpg"
+              alt="photo"
+            />
+            <div class="services-row row">
+              <div class="services-item-descr">
+                <h3 class="services-item-title title-item">
+                  Cантехника (монтаж, установка)
+                </h3>
+                <p class="services-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой. Мы берем на себя все
+                  заботы, чтобы превратить вашу квартиру в идеальное жилье.
+                </p>
+              </div>
+              <div class="services-btn-blur btn-blur btn-blur-mob">
+                <button
+                  class="services-btn btn-blue btn-blue-mob popup-open"
+                  type="button"
+                >
+                  Узнать стоимость
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="request section-b">
+        <div class="request-wrap">
+          <div class="request-wrap-img">
+            <img class="request-img" src="./img/request.jpg" alt="" />
+          </div>
+          <div class="request-wrap-form">
+            <h2 class="request-title section-title">Оставьте заявку</h2>
+            <p class="request-text text-item">
+              узнайте прямо сейчас, сколько будет стоить ваш ремонт мечты
+            </p>
+            <form class="request-form" action="#">
+              <div class="request-form-wp">
+                <input type="text" placeholder="Ваше имя" />
+                <input type="text" placeholder="Ваш телефон" />
+                <div class="request-btn-blur btn-blur">
+                  <button class="request-btn-blue btn-blue" type="submit">
+                    Оставить заявку
+                  </button>
+                </div>
+              </div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Расскажите подробнее об объекте"
+              ></textarea>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="steps section-b">
+        <h2 class="steps-title section-title">
+          Шаги к вашему идеальному ремонту
+        </h2>
+        <ul class="steps-list section-list">
+          <li class="steps-item section-item">
+            <div class="steps-item-row">
+              <img
+                class="steps-item-img"
+                src="./img/icon/NumberCircle1.svg"
+                alt="photo"
+              />
+              <!-- <p>1</p> -->
+              <h3 class="steps-item-title title-item">Оформление заявки:</h3>
+            </div>
+            <p class="steps-item-text text-item">
+              Сделайте первый важный шаг к вашему будущему ремонту: выберите
+              удобный способ оформления заявки – по телефону или на нашем сайте.
+            </p>
+          </li>
+          <li class="steps-item section-item">
+            <div class="steps-item-row">
+              <img
+                class="steps-item-img"
+                src="./img/icon/NumberCircle2.svg"
+                alt="photo"
+              />
+              <!-- <p>1</p> -->
+              <h3 class="steps-item-title title-item">Выезд замерщика:</h3>
+            </div>
+            <p class="steps-item-text text-item">
+              Встретьтесь с нашим замерщиком в удобное для вас время и
+              поделитесь всеми вашими пожеланиями по ремонту. После осмотра
+              объекта, он предоставит вам смету на работы.
+            </p>
+          </li>
+          <li class="steps-item section-item">
+            <div class="steps-item-row">
+              <img
+                class="steps-item-img"
+                src="./img/icon/NumberCircle3.svg"
+                alt="photo"
+              />
+              <!-- <p>1</p> -->
+              <h3 class="steps-item-title title-item">Подготовка сметы:</h3>
+            </div>
+            <p class="steps-item-text text-item">
+              Мы в течение 2-х дней составляем смету на ремонт Вашей квартиры,
+              после чего вышлем Вам смету на электронную почту или доставим
+              курьером.
+            </p>
+          </li>
+          <li class="steps-item section-item">
+            <div class="steps-item-row">
+              <img
+                class="steps-item-img"
+                src="./img/icon/NumberCircle4.svg"
+                alt="photo"
+              />
+              <!-- <p>1</p> -->
+              <h3 class="steps-item-title title-item">Заключение договора:</h3>
+            </div>
+            <p class="steps-item-text text-item">
+              Договор заключается по удобному для вас адресу, наш менеджер
+              приедет на любую запрошенную ваши локацию в удобное для вас время.
+            </p>
+          </li>
+          <li class="steps-item section-item">
+            <div class="steps-item-row">
+              <img
+                class="steps-item-img"
+                src="./img/icon/NumberCircle5.svg"
+                alt="photo"
+              />
+              <!-- <p>1</p> -->
+              <h3 class="steps-item-title title-item">Проведение работ:</h3>
+            </div>
+            <p class="steps-item-text text-item">
+              На протяжении всего ремонтного процесса мы тщательно следим за
+              качеством всех работ в соответствии со «строительными нормами и
+              правилами» (СНиП).
+            </p>
+          </li>
+          <li class="steps-item section-item">
+            <div class="steps-item-row">
+              <img
+                class="steps-item-img"
+                src="./img/icon/NumberCircle6.svg"
+                alt="photo"
+              />
+              <!-- <p>1</p> -->
+              <h3 class="steps-item-title title-item">Сдача объекта:</h3>
+            </div>
+            <p class="steps-item-text text-item">
+              По завершении ремонта и подписании акта сдачи-приема работ, ваша
+              квартира будет предоставлена в абсолютно чистом состоянии, готовая
+              к немедленному заселению.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="work section-b">
+        <h2 class="work-title section-title">Наши работы</h2>
+        <ul class="work-list section-list">
+          <li class="work-item section-item">
+            <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
+            <h3 class="work-item-title title-item">
+              Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова д.2б ​
+            </h3>
+            <p class="work-item-text text-item">
+              Полный спектр услуг, начиная от дизайн-проектирования и заканчивая
+              окончательной отделкой
+            </p>
+          </li>
+          <li class="work-item section-item">
+            <img class="work-item-img" src="./img/work2.jpg" alt="photo" />
+            <h3 class="work-item-title title-item">
+              Евроремонт 2-х комнатной квартиры 66 м2, на ул. Героев Космоса
+            </h3>
+            <p class="work-item-text text-item">
+              Наши клиенты получили полный спектр услуг, дизайн-проект и
+              окончательную отделку, после завершения работ.
+            </p>
+          </li>
+          <li class="work-item section-item">
+            <img class="work-item-img" src="./img/work3.jpg" alt="photo" />
+            <h3 class="work-item-title title-item">
+              Капитальный ремонт 1 комн. квартиры 48 м2, ул. Ветряные Горы
+            </h3>
+            <p class="work-item-text text-item">
+              Мы успешно завершили проект, охватывающий все этапы, начиная с
+              дизайна и заканчивая окончательной отделкой.
+            </p>
+          </li>
+          <li class="work-item section-item">
+            <img class="work-item-img" src="./img/work4.jpg" alt="photo" />
+            <h3 class="work-item-title title-item">
+              Ремонт 3-х комн. квартиры 104 м2, на ул. Григория Царика, дом 10
+            </h3>
+            <p class="work-item-text text-item">
+              Работа была выполнена, включая финальную отделку, чтобы обеспечить
+              полное удовлетворение наших заказчиков.
+            </p>
+          </li>
+          <li class="work-item section-item">
+            <img class="work-item-img" src="./img/work5.jpg" alt="photo" />
+            <h3 class="work-item-title title-item">
+              Капитальный ремонт 2-х комн. 80 м2, квартиры на ул. Щорса
+            </h3>
+            <p class="work-item-text text-item">
+              Мы оказали полный спектр услуг, включая разработку дизайна и
+              завершающую отделку.
+            </p>
+          </li>
+          <li class="work-item section-item">
+            <img class="work-item-img" src="./img/work6.jpg" alt="photo" />
+            <h3 class="work-item-title title-item">
+              Элитный ремонт дома 1000м2, в с. Крюковщина
+            </h3>
+            <p class="work-item-text text-item">
+              После завершения проекта наши клиенты оценили все этапы, включая
+              дизайн-проектирование и окончательную отделку.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="calc section-b">
+        <h2 class="calc-title section-title">
+          НЕ ДОВЕРЯЕТЕ ОНЛАЙН КАЛЬКУЛЯТОРАМ?
+        </h2>
+        <p class="calc-subtitle">
+          ПОЛУЧИТЕ ПОЛНОЕ ПРЕДСТАВЛЕНИЕ О РЕМОНТЕ В ДЕНЬ ОБРАЩЕНИЯ К НАШЕЙ
+          БРИГАДЕ!
+        </p>
+        <ul class="calc-list">
+          <li class="calc-item">
+            <div>
+              <img
+                class="calc-item-img"
+                src="./img/icon/NumberCircle1.svg"
+                alt="photo"
+              />
+              <p class="calc-item-descr">
+                Несколько вариантов выполнения ремонтных работ различными
+                материалами
+              </p>
+            </div>
+            <img class="calc-item-img" src="./img/icon/calc1.svg" alt="photo" />
+          </li>
+          <li class="calc-item">
+            <div>
+              <img
+                class="calc-item-img"
+                src="./img/icon/NumberCircle2.svg"
+                alt="photo"
+              />
+              <p class="calc-item-descr">
+                Предварительный вариант сметы и консультацию по снижению
+                стоимости
+              </p>
+            </div>
+            <img class="calc-item-img" src="./img/icon/calc2.svg" alt="photo" />
+          </li>
+          <li class="calc-item">
+            <div>
+              <img
+                class="calc-item-img"
+                src="./img/icon/NumberCircle3.svg"
+                alt="photo"
+              />
+              <p class="calc-item-descr">
+                Анализ проблемных зон и возможных решений по каждой из них
+              </p>
+            </div>
+            <img class="calc-item-img" src="./img/icon/calc3.svg" alt="photo" />
+          </li>
+          <li class="calc-item">
+            <div>
+              <img
+                class="calc-item-img"
+                src="./img/icon/NumberCircle4.svg"
+                alt="photo"
+              />
+              <p class="calc-item-descr">
+                Рекомендации по зонированию пространства и пригодных для этого
+                материалов
+              </p>
+            </div>
+            <img class="calc-item-img" src="./img/icon/calc4.svg" alt="photo" />
+          </li>
+          <li class="calc-item">
+            <div>
+              <img
+                class="calc-item-img"
+                src="./img/icon/NumberCircle5.svg"
+                alt="photo"
+              />
+              <p class="calc-item-descr">
+                Заключение по техническим возможностям и мощностям инженерных
+                систем
+              </p>
+            </div>
+            <img class="calc-item-img" src="./img/icon/calc5.svg" alt="photo" />
+          </li>
+          <li class="calc-item">
+            <div>
+              <img
+                class="calc-item-img"
+                src="./img/icon/NumberCircle6.svg"
+                alt="photo"
+              />
+              <p class="calc-item-descr">
+                Рекомендации по зонированию пространства и пригодных для этого
+                материалов
+              </p>
+            </div>
+            <img class="calc-item-img" src="./img/icon/calc6.svg" alt="photo" />
+          </li>
+        </ul>
+      </section>
+      <section class="about section-b">
+        <h2 class="about-title section-title">О нас</h2>
+        <div class="about-wrap">
+          <div class="about-wrap-part">
+            <div class="about-wrap-part1">
+              <ul class="hero-btn-row about-btn-row">
+                <li class="hero-btn btn">Эфективность</li>
+                <li class="hero-btn btn">Ответственность</li>
+                <li class="hero-btn btn">Экономия</li>
+              </ul>
+              <h2 class="about-article-title">Наш опыт – ваш успех:</h2>
+
+              <div class="about-wrap-btn">
+                <div class="about-wrap-txt">
+                  <h2 class="about-article-title">О DneprStroy</h2>
+                  <p class="about-item-text text-item">
+                    Мы — команда профессионалов, с горячим сердцем для
+                    строительства и дизайна. С момента нашего основания мы
+                    создаваем неповторимые и функциональные пространства,
+                    которые отражают индивидуальность наших клиентов.
+                  </p>
+                </div>
+                <div class="about-btn-blur btn-blur btn-blur-mob">
+                  <button
+                    class="about-btn-blue btn-blue btn-blue-mob"
+                    type="submit"
+                  >
+                    Читать далее
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-wrap-part2">
+              <img class="about-img1" src="./img/about1.jpg" alt="" />
+            </div>
+          </div>
+          <img class="about-img2" src="./img/about2.jpg" alt="" />
+        </div>
+      </section>
+      <section class="blog section-s">
+        <h2 class="blog-title section-title">Блог</h2>
+        <ul class="blog-list section-list">
+          <li class="services-item section-item">
+            <img class="services-item-img" src="./img/blog1.jpg" alt="photo" />
+            <div class="services-row row">
+              <div class="services-item-descr">
+                <h3 class="services-item-title title-item">
+                  Как сэкономить на Ремонте без ущерба для Качества
+                </h3>
+                <p class="services-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой. Мы берем на себя все
+                  заботы, чтобы превратить вашу квартиру в идеальное жилье.
+                </p>
+              </div>
+              <div class="services-btn-blur btn-blur btn-blur-mob">
+                <button
+                  class="services-btn btn-blue btn-blue-mob"
+                  type="button"
+                >
+                  Читать далее
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="services-item section-item">
+            <img class="services-item-img" src="./img/blog2.jpg" alt="photo" />
+            <div class="services-row row">
+              <div class="services-item-descr">
+                <h3 class="services-item-title title-item">
+                  Топовые Трюки для Увеличения Квартиры
+                </h3>
+                <p class="services-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой. Мы берем на себя все
+                  заботы, чтобы превратить вашу квартиру в идеальное жилье.
+                </p>
+              </div>
+              <div class="services-btn-blur btn-blur btn-blur-mob">
+                <button
+                  class="services-btn btn-blue btn-blue-mob"
+                  type="button"
+                >
+                  Читать далее
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="services-item section-item">
+            <img class="services-item-img" src="./img/blog3.jpg" alt="photo" />
+            <div class="services-row row">
+              <div class="services-item-descr">
+                <h3 class="services-item-title title-item">
+                  Создайте Роскошное Место для Отдыха и Релаксации
+                </h3>
+                <p class="services-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой. Мы берем на себя все
+                  заботы, чтобы превратить вашу квартиру в идеальное жилье.
+                </p>
+              </div>
+              <div class="services-btn-blur btn-blur btn-blur-mob">
+                <button
+                  class="services-btn btn-blue btn-blue-mob"
+                  type="button"
+                >
+                  Читать далее
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- <section class="request-calc section-b">
+        <div class="request-wrap">
+          <div class="request-wrap-img">
+            <img class="request-img" src="./img/request2.jpg" alt="" />
+          </div>
+          <div class="request-wrap-form">
+            <h2 class="request-title section-title">
+              Получите детальный расчет
+            </h2>
+            <p class="request-text text-item">
+              узнайте прямо сейчас, сколько будет стоить ваш ремонт мечты
+            </p>
+            <form class="request-form" action="#">
+              <div class="request-form-wp">
+                <input type="text" placeholder="Ваше имя" />
+                <input type="text" placeholder="Ваш телефон" />
+                <div class="request-btn-blur btn-blur">
+                  <button class="request-btn-blue btn-blue" type="submit">
+                    Оставить заявку
+                  </button>
+                </div>
+              </div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Расскажите подробнее об объекте"
+              ></textarea>
+            </form>
+          </div>
+        </div>
+      </section> -->
+      <section class="request-calc section-b">
+        <div class="request-new">
+          <div>
+            <h2 class="steps-title section-title">Оставьте заявку</h2>
+            <p class="repair-request-text">
+              узнайте прямо сейчас, сколько будет стоить ваш ремонт мечты
+            </p>
+            <form class="repair-request-form" action="#">
+              <input type="text" placeholder="Ваше имя" />
+              <input type="tel" placeholder="Ваш телефон" />
+              <input
+                type="text"
+                placeholder="Расскажите подробнее об объекте"
+              />
+              <button class="paperclip" type="button">
+                <img src="./img/icon/Paperclip.svg" alt="btn" />
+              </button>
+              <div class="request-calc-btn-blur-o btn-blur-o">
+                <button
+                  class="request-calc-btn-blue-o btn-blue-o"
+                  type="button"
+                >
+                  Оставить заявку
+                </button>
+              </div>
+            </form>
+          </div>
+          <img class="request-new-img" src="./img/letter.png" alt="letter" />
+        </div>
+      </section>
+    </div>
+    <footer class="footer" id="contacts-id">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-wrap-in">
+            <div class="footer-one">
+              <div class="footer-logo logo"><a href="/">DneprStroy</a></div>
+              <p class="footer-subtitle">Ваш ремонт - наша ответственность.</p>
+            </div>
+            <div class="footer-wrap-el">
+              <h4>Контакты</h4>
+              <ul class="footer-list footer-list-two">
+                <li>
+                  <a href="email:dneprstroy@gmail.com">dneprstroy@gmail.com</a>
+                </li>
+                <li><a href="tel:+380974518415">(097) 451 84 15</a></li>
+                <li><a href="tel:+380974518415">(097) 451 84 15</a></li>
+              </ul>
+            </div>
+            <nav class="footer-wrap-el">
+              <h4>Меню</h4>
+              <ul class="footer-list footer-menu-list">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/repair-page.html">Услуги</a></li>
+                <li><a href="/about-page.html">О нас</a></li>
+                <li><a href="/blog-page.html">Блог</a></li>
+              </ul>
+            </nav>
+            <div class="footer-btn-blur btn-blur">
+              <button class="footer-btn-blue btn-blue popup-open" type="submit">
+                Рассчитать стоимость
+              </button>
+            </div>
+          </div>
+          <p class="copy">Copyright © 2023 Dneprstroy</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop popup-fade">
+      <div class="modal popup">
+        <button class="button-x popup-close" type="button">
+          <img src="./img/icon/close.svg" alt="іконка" />
+        </button>
+        <p class="modal-title">Стоимость проекта</p>
+        <div class="modal-form">
+          <form action="#" class="modal-form">
+            <div class="modal-form-row">
+              <div>
+                <p>Общая площадь</p>
+                <div class="modal-form-sqr">
+                  <input id="user-name" name="sqr" type="text" />
+                  <span>м²</span>
+                </div>
+              </div>
+              <div>
+                <p>Количество комнат</p>
+                <div class="counter counter1">
+                  <span class="counter-min counter-min1">−</span>
+                  <input type="text" value="1" />
+                  <span class="counter-plus counter-plus1">+</span>
+                </div>
+              </div>
+              <div>
+                <p>Количество санузлов</p>
+                <div class="counter counter2">
+                  <span class="counter-min counter-min2">−</span>
+                  <input type="text" value="1" />
+                  <span class="counter-plus counter-plus2">+</span>
+                </div>
+              </div>
+              <div>
+                <p>Санузлы</p>
+                <div class="modal-form-bdr">
+                  <div>
+                    <input type="checkbox" id="cb1" />
+                    <label for="cb1">Ванна</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb2" />
+                    <label for="cb2">Душ</label>
+                  </div>
+                  <!-- <label> <input type="checkbox" /> <span>Ванна</span></label> -->
+                  <!-- <label><input type="checkbox" /><span>Душ</span></label> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-form-row">
+              <div>
+                <p>Потолок</p>
+                <div class="modal-form-wrap modal-form-pot">
+                  <div>
+                    <input type="radio" name="rb" id="rb1" />
+                    <label for="rb1">Натяжной матовый</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="rb" id="rb2" />
+                    <label for="rb2">Натяжной бесщелевой матовый</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="rb" id="rb3" />
+                    <label for="rb3">Гипсокартон</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>Пол</p>
+                <div class="modal-form-wrap modal-form-pol">
+                  <div>
+                    <input type="radio" name="rb2" id="rb2-1" />
+                    <label for="rb2-1">Ламинат</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="rb2" id="rb2-2" />
+                    <label for="rb2-2">Виниловый пол</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="rb2" id="rb2-3" />
+                    <label for="rb2-3">Паркет</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>Опции</p>
+                <div class="modal-form-wrap modal-form-op">
+                  <div>
+                    <input type="checkbox" id="cb2-1" />
+                    <label for="cb2-1">Стяжка пола</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb2-2" />
+                    <label for="cb2-2">Шумоизоляция</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb2-3" />
+                    <label for="cb2-3">Входные двери</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb2-4" />
+                    <label for="cb2-4">Второй слой гипсокартона</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb2-5" />
+                    <label for="cb2-5">Гигиенический душ</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-form-row">
+              <div>
+                <p>Мебель</p>
+                <div class="modal-form-bdr">
+                  <div>
+                    <input type="checkbox" id="cb3-1" />
+                    <label for="cb3-1">Да</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb3-2" />
+                    <label for="cb3-2">Нет</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>Количество зон теплого пола</p>
+                <div class="counter counter3">
+                  <span class="counter-min counter-min3">−</span>
+                  <input type="text" value="1" />
+                  <span class="counter-plus counter-plus3">+</span>
+                </div>
+              </div>
+              <div>
+                <p>Кондиционирование</p>
+                <div class="counter counter4">
+                  <span class="counter-min counter-min4">−</span>
+                  <input type="text" value="1" />
+                  <span class="counter-plus counter-plus4">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-form-row-2">
+              <div class="modal-form-row-2-input">
+                <input
+                  type="text"
+                  placeholder="Расскажите подробнее об объекте"
+                />
+              </div>
+              <button class="paperclip-1" type="button">
+                <img src="./img/icon/Paperclip.svg" alt="btn" />
+              </button>
+              <div class="modal-btn-blur btn-blur">
+                <button class="modal-btn-blue btn-blue" type="submit">
+                  Оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
