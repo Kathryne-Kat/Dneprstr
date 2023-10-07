@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DneprStroy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header section-s">
+      <div class="header-mobil-top row container">
+        <div class="header-logo-mob logo"><a href="/">DneprStroy</a></div>
+        <div class="menu-tel-mob">
+          <a href="tel:+380974518415">(097) 451 84 15</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-container row">
+          <div class="header-logo logo"><a href="/">DneprStroy</a></div>
+          <nav class="header-menu">
+            <ul class="header-menu-list row">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="repair-page.html">Услуги</a></li>
+              <li><a href="about-page.html">О нас</a></li>
+              <li><a href="blog-page.html">Блог</a></li>
+              <li><a href="#contacts-id">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="row">
+            <div class="menu-tel">
+              <a href="tel:+380974518415">(097) 451 84 15</a>
+            </div>
+            <button class="menu-btn btn popup-open" type="button">
+              Рассчитать стоимость
+            </button>
+          </div>
+          <div class="header-burger">
+            <img src="./img/icon/burger.svg" alt="меню" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-menu-wrap">
+          <button class="button-x mobile-menu-close" type="button">
+            <img src="./img/icon/X.svg" alt="іконка" />
+          </button>
+          <div class="mobile-menu-logo logo"><a href="/">DneprStroy</a></div>
+          <nav class="header-menu-mob">
+            <ul class="mobile-menu-list">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="repair-page.html">Услуги</a></li>
+              <li><a href="about-page.html">О нас</a></li>
+              <li><a href="blog-page.html">Блог</a></li>
+              <li><a href="#contacts-id">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container calc-page-wrap">
+      <div class="calc-page">
+        <p class="modal-title">Стоимость проекта</p>
+        <div class="modal-form">
+          <form action="#" class="modal-form">
+            <div class="modal-form-row">
+              <div class="modal-form-row-wrap">
+                <p>Общая площадь</p>
+                <div class="modal-form-sqr">
+                  <input
+                    id="user-name"
+                    name="sqr"
+                    type="text"
+                    placeholder="1"
+                  />
+                  <span>м²</span>
+                </div>
+              </div>
+              <div class="modal-form-row-wrap">
+                <p>Количество комнат</p>
+                <div class="counter counter1">
+                  <span class="counter-min counter-min1">−</span>
+                  <input type="text" value="1" placeholder="1" />
+                  <span class="counter-plus counter-plus1">+</span>
+                </div>
+              </div>
+              <div class="modal-form-row-wrap">
+                <p>Количество санузлов</p>
+                <div class="counter counter2">
+                  <span class="counter-min counter-min2">−</span>
+                  <input type="text" value="1" placeholder="1" />
+                  <span class="counter-plus counter-plus2">+</span>
+                </div>
+              </div>
+              <div class="modal-form-row-wrap">
+                <p>Санузлы</p>
+                <div class="modal-form-bdr">
+                  <div>
+                    <input type="checkbox" id="cb1" />
+                    <label for="cb1">Ванна</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb2" />
+                    <label for="cb2">Душ</label>
+                  </div>
+                  <!-- <label> <input type="checkbox" /> <span>Ванна</span></label> -->
+                  <!-- <label><input type="checkbox" /><span>Душ</span></label> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-form-row">
+              <div class="modal-form-row-wrap">
+                <p>Потолок</p>
+                <div class="modal-form-wrap modal-form-pot">
+                  <div>
+                    <input type="radio" name="rb" id="rb1" />
+                    <label for="rb1">Натяжной матовый</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="rb" id="rb2" />
+                    <label for="rb2">Натяжной бесщелевой матовый</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="rb" id="rb3" />
+                    <label for="rb3">Гипсокартон</label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-form-row-wrap">
+                <p>Пол</p>
+                <div class="modal-form-wrap modal-form-pol">
+                  <div>
+                    <input type="radio" name="rb2" id="rb2-1" />
+                    <label for="rb2-1">Ламинат</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="rb2" id="rb2-2" />
+                    <label for="rb2-2">Виниловый пол</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="rb2" id="rb2-3" />
+                    <label for="rb2-3">Паркет</label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-form-row-wrap">
+                <p>Опции</p>
+                <div class="modal-form-wrap modal-form-op">
+                  <div>
+                    <input type="checkbox" id="cb2-1" />
+                    <label for="cb2-1">Стяжка пола</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb2-2" />
+                    <label for="cb2-2">Шумоизоляция</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb2-3" />
+                    <label for="cb2-3">Входные двери</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb2-4" />
+                    <label for="cb2-4">Второй слой гипсокартона</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb2-5" />
+                    <label for="cb2-5">Гигиенический душ</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-form-row">
+              <div class="modal-form-row-wrap">
+                <p>Мебель</p>
+                <div class="modal-form-bdr">
+                  <div>
+                    <input type="checkbox" id="cb3-1" />
+                    <label for="cb3-1">Да</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cb3-2" />
+                    <label for="cb3-2">Нет</label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-form-row-wrap">
+                <p>Количество зон теплого пола</p>
+                <div class="counter counter3">
+                  <span class="counter-min counter-min3">−</span>
+                  <input type="text" value="1" placeholder="1" />
+                  <span class="counter-plus counter-plus3">+</span>
+                </div>
+              </div>
+              <div class="modal-form-row-wrap">
+                <p>Кондиционирование</p>
+                <div class="counter counter4">
+                  <span class="counter-min counter-min4">−</span>
+                  <input type="text" value="1" placeholder="1" />
+                  <span class="counter-plus counter-plus4">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-form-row-2 modal-form-row-2-page">
+              <div class="modal-form-row-2-input">
+                <input
+                  type="text"
+                  placeholder="Расскажите подробнее об объекте"
+                />
+              </div>
+              <button class="paperclip-1" type="button">
+                <img src="./img/icon/Paperclip.svg" alt="btn" />
+              </button>
+              <div class="calc-btn-blur btn-blur btn-blur-mob">
+                <button class="calc-btn btn-blue btn-blue-mob" type="button">
+                  Оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer" id="contacts-id">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-wrap-in">
+            <div class="footer-one">
+              <div class="footer-logo logo"><a href="/">DneprStroy</a></div>
+              <p class="footer-subtitle">Ваш ремонт - наша ответственность.</p>
+            </div>
+            <div class="footer-wrap-el">
+              <h4>Контакты</h4>
+              <ul class="footer-list footer-list-two">
+                <li>
+                  <a href="email:dneprstroy@gmail.com">dneprstroy@gmail.com</a>
+                </li>
+                <li><a href="tel:+380974518415">(097) 451 84 15</a></li>
+                <li><a href="tel:+380974518415">(097) 451 84 15</a></li>
+              </ul>
+            </div>
+            <nav class="footer-wrap-el">
+              <h4>Меню</h4>
+              <ul class="footer-list footer-menu-list">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/repair-page.html">Услуги</a></li>
+                <li><a href="/about-page.html">О нас</a></li>
+                <li><a href="/blog-page.html">Блог</a></li>
+              </ul>
+            </nav>
+            <div class="footer-btn-blur btn-blur">
+              <button class="footer-btn-blue btn-blue popup-open" type="submit">
+                Рассчитать стоимость
+              </button>
+            </div>
+          </div>
+          <p class="copy">Copyright © 2023 Dneprstroy</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>

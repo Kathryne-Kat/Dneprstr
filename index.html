@@ -10,10 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style-page.css" />
@@ -49,6 +45,10 @@
             <button class="menu-btn btn popup-open" type="button">
               Рассчитать стоимость
             </button>
+            <a href="calc-page.html" class="menu-btn-mob btn" type="button">
+              <!-- <a href="calc-page.html" class="btn" type="button"> -->
+              Рассчитать стоимость
+            </a>
           </div>
           <div class="header-burger">
             <img src="./img/icon/burger.svg" alt="меню" />
@@ -426,7 +426,7 @@
       </section>
       <section class="work section-b">
         <h2 class="work-title section-title">Наши работы</h2>
-        <ul class="work-list section-list">
+        <ul class="work-list work-list-desctop section-list">
           <li class="work-item section-item">
             <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
             <h3 class="work-item-title title-item">
@@ -488,6 +488,77 @@
             </p>
           </li>
         </ul>
+        <div class="sw-button-prev btn-swiper">
+          <img src="./img/icon/CaretLeft.svg" alt="" />
+        </div>
+        <div class="sw-button-next btn-swiper">
+          <img src="./img/icon/CaretRight.svg" alt="" />
+        </div>
+        <div class="work-list-swiper swiper-work swiper">
+          <div class="work-list swiper-wrapper">
+            <div class="work-item section-item swiper-slide">
+              <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
+              <h3 class="work-item-title title-item">
+                Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова д.2б
+                ​
+              </h3>
+              <p class="work-item-text text-item">
+                Полный спектр услуг, начиная от дизайн-проектирования и
+                заканчивая окончательной отделкой
+              </p>
+            </div>
+            <div class="work-item section-item swiper-slide">
+              <img class="work-item-img" src="./img/work2.jpg" alt="photo" />
+              <h3 class="work-item-title title-item">
+                Евроремонт 2-х комнатной квартиры 66 м2, на ул. Героев Космоса
+              </h3>
+              <p class="work-item-text text-item">
+                Наши клиенты получили полный спектр услуг, дизайн-проект и
+                окончательную отделку, после завершения работ.
+              </p>
+            </div>
+            <div class="work-item section-item swiper-slide">
+              <img class="work-item-img" src="./img/work3.jpg" alt="photo" />
+              <h3 class="work-item-title title-item">
+                Капитальный ремонт 1 комн. квартиры 48 м2, ул. Ветряные Горы
+              </h3>
+              <p class="work-item-text text-item">
+                Мы успешно завершили проект, охватывающий все этапы, начиная с
+                дизайна и заканчивая окончательной отделкой.
+              </p>
+            </div>
+            <div class="work-item section-item swiper-slide">
+              <img class="work-item-img" src="./img/work4.jpg" alt="photo" />
+              <h3 class="work-item-title title-item">
+                Ремонт 3-х комн. квартиры 104 м2, на ул. Григория Царика, дом 10
+              </h3>
+              <p class="work-item-text text-item">
+                Работа была выполнена, включая финальную отделку, чтобы
+                обеспечить полное удовлетворение наших заказчиков.
+              </p>
+            </div>
+            <div class="work-item section-item swiper-slide">
+              <img class="work-item-img" src="./img/work5.jpg" alt="photo" />
+              <h3 class="work-item-title title-item">
+                Капитальный ремонт 2-х комн. 80 м2, квартиры на ул. Щорса
+              </h3>
+              <p class="work-item-text text-item">
+                Мы оказали полный спектр услуг, включая разработку дизайна и
+                завершающую отделку.
+              </p>
+            </div>
+            <div class="work-item section-item swiper-slide">
+              <img class="work-item-img" src="./img/work6.jpg" alt="photo" />
+              <h3 class="work-item-title title-item">
+                Элитный ремонт дома 1000м2, в с. Крюковщина
+              </h3>
+              <p class="work-item-text text-item">
+                После завершения проекта наши клиенты оценили все этапы, включая
+                дизайн-проектирование и окончательную отделку.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="calc section-b">
         <h2 class="calc-title section-title">
@@ -626,7 +697,7 @@
       </section>
       <section class="blog section-s">
         <h2 class="blog-title section-title">Блог</h2>
-        <ul class="blog-list section-list">
+        <ul class="blog-list blog-list-desctop section-list">
           <li class="services-item section-item">
             <img class="services-item-img" src="./img/blog1.jpg" alt="photo" />
             <div class="services-row row">
@@ -697,40 +768,98 @@
             </div>
           </li>
         </ul>
-      </section>
-      <!-- <section class="request-calc section-b">
-        <div class="request-wrap">
-          <div class="request-wrap-img">
-            <img class="request-img" src="./img/request2.jpg" alt="" />
-          </div>
-          <div class="request-wrap-form">
-            <h2 class="request-title section-title">
-              Получите детальный расчет
-            </h2>
-            <p class="request-text text-item">
-              узнайте прямо сейчас, сколько будет стоить ваш ремонт мечты
-            </p>
-            <form class="request-form" action="#">
-              <div class="request-form-wp">
-                <input type="text" placeholder="Ваше имя" />
-                <input type="text" placeholder="Ваш телефон" />
-                <div class="request-btn-blur btn-blur">
-                  <button class="request-btn-blue btn-blue" type="submit">
-                    Оставить заявку
+        <div class="swb-button-prev btn-swiper">
+          <img src="./img/icon/CaretLeft.svg" alt="" />
+        </div>
+        <div class="swb-button-next btn-swiper">
+          <img src="./img/icon/CaretRight.svg" alt="" />
+        </div>
+        <div class="blog-list-swiper swiper-blog swiper">
+          <div class="blog-list swiper-wrapper">
+            <div class="services-item section-item swiper-slide">
+              <img
+                class="services-item-img"
+                src="./img/blog1.jpg"
+                alt="photo"
+              />
+              <div class="services-row row">
+                <div class="services-item-descr">
+                  <h3 class="services-item-title title-item">
+                    Как сэкономить на Ремонте без ущерба для Качества
+                  </h3>
+                  <p class="services-item-text text-item">
+                    Полный спектр услуг, начиная от дизайн-проектирования и
+                    заканчивая окончательной отделкой. Мы берем на себя все
+                    заботы, чтобы превратить вашу квартиру в идеальное жилье.
+                  </p>
+                </div>
+                <div class="services-btn-blur btn-blur btn-blur-mob">
+                  <button
+                    class="services-btn btn-blue btn-blue-mob"
+                    type="button"
+                  >
+                    Читать далее
                   </button>
                 </div>
               </div>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Расскажите подробнее об объекте"
-              ></textarea>
-            </form>
+            </div>
+            <div class="services-item section-item swiper-slide">
+              <img
+                class="services-item-img"
+                src="./img/blog2.jpg"
+                alt="photo"
+              />
+              <div class="services-row row">
+                <div class="services-item-descr">
+                  <h3 class="services-item-title title-item">
+                    Топовые Трюки для Увеличения Квартиры
+                  </h3>
+                  <p class="services-item-text text-item">
+                    Полный спектр услуг, начиная от дизайн-проектирования и
+                    заканчивая окончательной отделкой. Мы берем на себя все
+                    заботы, чтобы превратить вашу квартиру в идеальное жилье.
+                  </p>
+                </div>
+                <div class="services-btn-blur btn-blur btn-blur-mob">
+                  <button
+                    class="services-btn btn-blue btn-blue-mob"
+                    type="button"
+                  >
+                    Читать далее
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="services-item section-item swiper-slide">
+              <img
+                class="services-item-img"
+                src="./img/blog3.jpg"
+                alt="photo"
+              />
+              <div class="services-row row">
+                <div class="services-item-descr">
+                  <h3 class="services-item-title title-item">
+                    Создайте Роскошное Место для Отдыха и Релаксации
+                  </h3>
+                  <p class="services-item-text text-item">
+                    Полный спектр услуг, начиная от дизайн-проектирования и
+                    заканчивая окончательной отделкой. Мы берем на себя все
+                    заботы, чтобы превратить вашу квартиру в идеальное жилье.
+                  </p>
+                </div>
+                <div class="services-btn-blur btn-blur btn-blur-mob">
+                  <button
+                    class="services-btn btn-blue btn-blue-mob"
+                    type="button"
+                  >
+                    Читать далее
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="request-calc section-b">
         <div class="request-new">
           <div>
