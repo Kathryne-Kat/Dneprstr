@@ -80,39 +80,3 @@ $(document).ready(function () {
     $(".mobile-menu").removeClass("is-active");
   });
 });
-
-const swiper1 = new Swiper(".swiper-work", {
-  loop: true,
-  speed: 500,
-  grabCursor: true,
-  slidesPerView: "auto",
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".sw-button-next",
-    prevEl: ".sw-button-prev",
-  },
-});
-
-const swiper2 = new Swiper(".swiper-blog", {
-  loop: true,
-  speed: 500,
-  grabCursor: true,
-  slidesPerView: "auto",
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".swb-button-next",
-    prevEl: ".swb-button-prev",
-  },
-});
-
-const swiper3 = new Swiper(".swiper-reviews", {
-  loop: true,
-  speed: 500,
-  grabCursor: true,
-  slidesPerView: "auto",
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".swr-button-next",
-    prevEl: ".swr-button-prev",
-  },
-});

@@ -17,6 +17,19 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style-page.css" />
+    <script type="module" src="/js/script.js">
+            const swiper4 = new Swiper(".swiper-reviews", {
+        loop: true,
+        speed: 500,
+        grabCursor: true,
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swr-button-next",
+          prevEl: ".swr-button-prev",
+        },
+      });
+    </script>
   </head>
   <body>
     <header class="header section-s">
@@ -398,7 +411,7 @@
           <img src="./img/icon/CaretRight.svg" alt="" />
         </div>
         <div class="reviews-list-swiper swiper-reviews swiper">
-          <div class="reviews-list swiper-wrapper">
+          <div class="reviews-list-mob swiper-wrapper">
             <div class="reviews-item swiper-slide">
               <div class="reviews-item-wrap">
                 <p class="reviews-item-text text-item">
@@ -617,6 +630,7 @@
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script type="module" src="/js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="./js/swiper.js"></script>
   </body>
 </html>
