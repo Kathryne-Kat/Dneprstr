@@ -205,6 +205,9 @@ input {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 /* .hero-btn-blue {
   width: 240px;
@@ -241,6 +244,8 @@ input {
   gap: 36px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .hero-form form input {
   width: 366px;
@@ -637,8 +642,6 @@ input {
 .about-btn-blur {
   width: 186px;
   height: 186px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .about-btn-blue {
   width: 164px;
@@ -1396,7 +1399,7 @@ input[type="radio"]:checked + label:after {
     font-size: 16px;
     /* margin-top: 10px; */
   }
-  .footer-btn-blur {
+  .footer-btn-blur.btn-blur {
     display: none;
   }
   .modal {
@@ -1608,6 +1611,9 @@ input[type="radio"]:checked + label:after {
   .footer-wrap-el {
     margin: 0 auto;
     text-align: center;
+  }
+   .footer-btn-blur.btn-blur {
+    display: block;
   }
   .menu-btn {
     display: none;
