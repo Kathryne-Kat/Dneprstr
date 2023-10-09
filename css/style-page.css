@@ -133,13 +133,120 @@
 .repair-img2:first-child {
   margin-bottom: 16px;
 }
-.repair-wrap-img div:first-child {
+.repair-list-swiper {
+  max-width: 1150px;
+  object-fit: cover;
+  width: 100%;
+}
+.repair-wrap-img2 {
+  max-width: 570px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-repair {
+  width: 100%;
+}
+.swiper {
+  width: 100%;
+}
+.repair-list {
   max-width: 1150px;
   width: 100%;
 }
-.repair-wrap-img div:last-child {
-  max-width: 570px;
+.swiper-slide {
+  /* max-width: 1150px; */
   width: 100%;
+}
+.repair-list-swiper {
+  position: relative;
+}
+.repair-item {
+  max-width: 1150px;
+  width: 100%;
+}
+.swpr-button-prev,
+.swpr-button-next {
+  position: absolute;
+  z-index: 20;
+}
+.swpr-button-prev {
+  top: 50%;
+  left: 2px;
+}
+.swpr-button-next {
+  top: 50%;
+  right: 2px;
+}
+.repair-img2-ph {
+  position: relative;
+}
+
+.repair-img2-ph:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(34, 34, 35, 0.52);
+  border-radius: 33px;
+  backdrop-filter: blur(3px);
+  opacity: 0;
+}
+
+.repair-img2-ph:before {
+  content: "+ фото";
+  position: absolute;
+  padding: 12px 24px;
+  /* width: 105px; */
+  /* height: 36px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 38px;
+  background: rgba(34, 34, 35, 0.66);
+  backdrop-filter: blur(3px);
+  /* right: 0;
+  bottom: 0; */
+  /* background: url(../img/icon/Frame44.png) no-repeat center center; */
+  /* opacity: 0; */
+  z-index: 1;
+  transition: opacity 0.4s ease;
+  font-size: 20px;
+  line-height: 150%; /* 36px */
+  font-weight: 500;
+}
+
+/* .services-item-open:hover:before,
+.services-item-open:hover:after {
+  opacity: 1;
+} */
+.swprp-button-prev,
+.swprp-button-next {
+  position: absolute;
+  z-index: 20;
+}
+.swprp-button-prev {
+  top: 50%;
+  left: 2px;
+}
+.swprp-button-next {
+  top: 50%;
+  right: 2px;
+}
+.swprh-button-prev,
+.swprh-button-next {
+  position: absolute;
+  z-index: 20;
+}
+.swprh-button-prev {
+  top: 50%;
+  left: 2px;
+}
+.swprh-button-next {
+  top: 50%;
+  right: 2px;
 }
 /*-------------------REPAIR SLOGAN PAGE----------------*/
 .repair-slogan-wrap {
@@ -222,6 +329,9 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 150%; /* 27px */
+}
+.reviews-list-desctop.section-list {
+  flex-wrap: nowrap;
 }
 .reviews-list-swiper.swiper {
   display: none;
@@ -369,6 +479,41 @@
 .btn-mob-bl {
   display: none;
 }
+.blog-item-open {
+  display: block;
+  position: relative;
+}
+
+.blog-item-open:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(34, 34, 35, 0.52);
+  border-radius: 33px;
+  backdrop-filter: blur(3px);
+  opacity: 0;
+}
+
+.blog-item-open:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/icon/Frame44.png) no-repeat center center;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+.blog-item-open:hover:before,
+.blog-item-open:hover:after {
+  opacity: 1;
+}
 @media screen and (max-width: 1600px) {
   .menu-btn {
     display: none;
@@ -413,6 +558,11 @@
   .head-title {
     font-size: 52px;
   }
+  .repair-wrap-img2 {
+    max-width: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
   .blog-wrap-art {
     max-width: none;
     width: 100%;
@@ -443,6 +593,9 @@
   .head-title {
     font-size: 48px;
   }
+  .repair-wrap-img2 {
+    display: none;
+  }
 }
 @media screen and (max-width: 1120px) {
   .repair-wrap h1,
@@ -468,6 +621,15 @@
   }
   .reviews {
     position: relative;
+  }
+  .reviews-item {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .reviews-item-wrap {
+    margin-left: auto;
+    margin-right: auto;
   }
   .btn-swiper {
     display: block;
@@ -501,13 +663,17 @@
   }
   .blog-wrap-art2 {
     margin-bottom: 16px;
+    margin: 0 auto;
   }
   .blog-wrap-art2:first-child {
     margin-bottom: 16px;
   }
   .blog-wrap-art {
     display: block;
+    margin: 0 auto;
     margin-bottom: 16px;
+    align-items: center;
+    justify-content: center;
   }
   .btn-mob-bl {
     display: flex;
@@ -518,7 +684,11 @@
   .blog-btn {
     display: none;
   }
-  .about-page-wrap img {
+  .blog-item-open:hover:before,
+  .blog-item-open:hover:after {
+    opacity: 0;
+  }
+  out-page-wrap img {
     height: 300px;
   }
   .about-page-wrap h1 {

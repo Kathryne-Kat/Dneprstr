@@ -32,12 +32,30 @@
           <nav class="header-menu">
             <ul class="header-menu-list row">
               <li><a href="index.html">Главная</a></li>
-              <li><a href="repair-page.html">Услуги</a></li>
+              <li class="header-menu-list-about">
+                <a href="#">Услуги</a>
+              </li>
               <li><a href="about-page.html">О нас</a></li>
               <li><a href="blog-page.html">Блог</a></li>
               <li><a href="#contacts-id">Контакты</a></li>
             </ul>
+            <div class="header-menu-about is-hidden" id="menu-about">
+              <ul class="header-about-list">
+                <li><a href="repair-page.html">Ремонт квартир под ключ</a></li>
+                <li>
+                  <a href="heating-page.html"
+                    >Автономное отопление и теплый пол</a
+                  >
+                </li>
+                <li>
+                  <a href="plumbing-page.html"
+                    >Cантехника (монтаж, установка)</a
+                  >
+                </li>
+              </ul>
+            </div>
           </nav>
+
           <div class="row">
             <div class="menu-tel">
               <a href="tel:+380974518415">(097) 451 84 15</a>
@@ -210,11 +228,13 @@
         <h2 class="services-title section-title">Услуги</h2>
         <ul class="services-list section-list">
           <li class="services-item section-item">
-            <img
-              class="services-item-img"
-              src="./img/services1.jpg"
-              alt="photo"
-            />
+            <a href="repair-page.html" class="services-item-open">
+              <img
+                class="services-item-img"
+                src="./img/services1.jpg"
+                alt="photo"
+              />
+            </a>
             <div class="services-row row">
               <div class="services-item-descr">
                 <h3 class="services-item-title title-item">
@@ -237,11 +257,13 @@
             </div>
           </li>
           <li class="services-item section-item">
-            <img
-              class="services-item-img"
-              src="./img/services2.jpg"
-              alt="photo"
-            />
+            <a href="heating-page.html" class="services-item-open">
+              <img
+                class="services-item-img"
+                src="./img/services2.jpg"
+                alt="photo"
+              />
+            </a>
             <div class="services-row row">
               <div class="services-item-descr">
                 <h3 class="services-item-title title-item">
@@ -264,11 +286,13 @@
             </div>
           </li>
           <li class="services-item section-item">
-            <img
-              class="services-item-img"
-              src="./img/services3.jpg"
-              alt="photo"
-            />
+            <a href="plumbing-page.html" class="services-item-open">
+              <img
+                class="services-item-img"
+                src="./img/services3.jpg"
+                alt="photo"
+              />
+            </a>
             <div class="services-row row">
               <div class="services-item-descr">
                 <h3 class="services-item-title title-item">
@@ -427,15 +451,36 @@
       <section class="work section-b">
         <h2 class="work-title section-title">Наши работы</h2>
         <ul class="work-list work-list-desctop section-list">
-          <li class="work-item section-item">
-            <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
-            <h3 class="work-item-title title-item">
-              Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова д.2б ​
-            </h3>
-            <p class="work-item-text text-item">
-              Полный спектр услуг, начиная от дизайн-проектирования и заканчивая
-              окончательной отделкой
-            </p>
+          <li class="work-item work-card effect__hover section-item">
+            <div class="card__front">
+              <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
+              <h3 class="work-item-title title-item">
+                Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова д.2б
+                ​
+              </h3>
+              <p class="work-item-text text-item">
+                Полный спектр услуг, начиная от дизайн-проектирования и
+                заканчивая окончательной отделкой
+              </p>
+            </div>
+            <div class="card__back">
+              <h4>Были выполнены следующие виды работ:</h4>
+              <ul>
+                <li>Установка окон ПВХ</li>
+                <li>Стяжка пола- Укладка ламината</li>
+                <li>Укладка напольной плитки</li>
+                <li>Замена радиаторов отопления</li>
+                <li>Звукоизоляция потолка и полов</li>
+                <li>Монтаж натяжных потолков</li>
+                <li>с/у облицован плиткой</li>
+              </ul>
+              <p>Срок работ: 4 месяца</p>
+              <div class="card-btn-blur btn-blur">
+                <a href="#order" class="card-btn btn-blue" type="button">
+                  Хочу так же
+                </a>
+              </div>
+            </div>
           </li>
           <li class="work-item section-item">
             <img class="work-item-img" src="./img/work2.jpg" alt="photo" />
@@ -496,18 +541,259 @@
         </div>
         <div class="work-list-swiper swiper-work swiper">
           <div class="work-list swiper-wrapper">
-            <div class="work-item section-item swiper-slide">
-              <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
-              <h3 class="work-item-title title-item">
-                Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова д.2б
-                ​
-              </h3>
-              <p class="work-item-text text-item">
-                Полный спектр услуг, начиная от дизайн-проектирования и
-                заканчивая окончательной отделкой
-              </p>
+            <div
+              class="work-item section-item work-card effect__click swiper-slide"
+            >
+              <div class="card__front card__front-1">
+                <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
+                <h3 class="work-item-title title-item">
+                  Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова
+                  д.2б ​
+                </h3>
+                <p class="work-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой
+                </p>
+                <div class="work-btn-blur btn-blur btn-blur-mob">
+                  <button
+                    class="work-btn btn-blue btn-blue-mob effect__click"
+                    type="button"
+                  >
+                    Подробнее
+                    <img src="./img/icon/ArrowLineUpRight.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="card__back card__back-1">
+                <h4>Были выполнены следующие виды работ:</h4>
+                <ul>
+                  <li>Установка окон ПВХ</li>
+                  <li>Стяжка пола- Укладка ламината</li>
+                  <li>Укладка напольной плитки</li>
+                  <li>Замена радиаторов отопления</li>
+                  <li>Звукоизоляция потолка и полов</li>
+                  <li>Монтаж натяжных потолков</li>
+                  <li>с/у облицован плиткой</li>
+                </ul>
+                <p>Срок работ: 4 месяца</p>
+                <div class="card-btn-blur btn-blur">
+                  <a href="#order" class="card-btn btn-blue" type="button">
+                    Хочу так же
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="work-item section-item swiper-slide">
+            <div
+              class="work-item section-item work-card effect__click swiper-slide"
+            >
+              <div class="card__front card__front-1">
+                <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
+                <h3 class="work-item-title title-item">
+                  Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова
+                  д.2б ​
+                </h3>
+                <p class="work-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой
+                </p>
+                <div class="work-btn-blur btn-blur btn-blur-mob">
+                  <button
+                    class="work-btn btn-blue btn-blue-mob effect__click"
+                    type="button"
+                  >
+                    Подробнее
+                    <img src="./img/icon/ArrowLineUpRight.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="card__back card__back-1">
+                <h4>Были выполнены следующие виды работ:</h4>
+                <ul>
+                  <li>Установка окон ПВХ</li>
+                  <li>Стяжка пола- Укладка ламината</li>
+                  <li>Укладка напольной плитки</li>
+                  <li>Замена радиаторов отопления</li>
+                  <li>Звукоизоляция потолка и полов</li>
+                  <li>Монтаж натяжных потолков</li>
+                  <li>с/у облицован плиткой</li>
+                </ul>
+                <p>Срок работ: 4 месяца</p>
+                <div class="card-btn-blur btn-blur">
+                  <a href="#order" class="card-btn btn-blue" type="button">
+                    Хочу так же
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="work-item section-item work-card effect__click swiper-slide"
+            >
+              <div class="card__front card__front-1">
+                <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
+                <h3 class="work-item-title title-item">
+                  Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова
+                  д.2б ​
+                </h3>
+                <p class="work-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой
+                </p>
+                <div class="work-btn-blur btn-blur btn-blur-mob">
+                  <button
+                    class="work-btn btn-blue btn-blue-mob effect__click"
+                    type="button"
+                  >
+                    Подробнее
+                    <img src="./img/icon/ArrowLineUpRight.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="card__back card__back-1">
+                <h4>Были выполнены следующие виды работ:</h4>
+                <ul>
+                  <li>Установка окон ПВХ</li>
+                  <li>Стяжка пола- Укладка ламината</li>
+                  <li>Укладка напольной плитки</li>
+                  <li>Замена радиаторов отопления</li>
+                  <li>Звукоизоляция потолка и полов</li>
+                  <li>Монтаж натяжных потолков</li>
+                  <li>с/у облицован плиткой</li>
+                </ul>
+                <p>Срок работ: 4 месяца</p>
+                <div class="card-btn-blur btn-blur">
+                  <a href="#order" class="card-btn btn-blue" type="button">
+                    Хочу так же
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="work-item section-item work-card effect__click swiper-slide"
+            >
+              <div class="card__front card__front-1">
+                <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
+                <h3 class="work-item-title title-item">
+                  Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова
+                  д.2б ​
+                </h3>
+                <p class="work-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой
+                </p>
+                <div class="work-btn-blur btn-blur btn-blur-mob">
+                  <button
+                    class="work-btn btn-blue btn-blue-mob effect__click"
+                    type="button"
+                  >
+                    Подробнее
+                    <img src="./img/icon/ArrowLineUpRight.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="card__back card__back-1">
+                <h4>Были выполнены следующие виды работ:</h4>
+                <ul>
+                  <li>Установка окон ПВХ</li>
+                  <li>Стяжка пола- Укладка ламината</li>
+                  <li>Укладка напольной плитки</li>
+                  <li>Замена радиаторов отопления</li>
+                  <li>Звукоизоляция потолка и полов</li>
+                  <li>Монтаж натяжных потолков</li>
+                  <li>с/у облицован плиткой</li>
+                </ul>
+                <p>Срок работ: 4 месяца</p>
+                <div class="card-btn-blur btn-blur">
+                  <a href="#order" class="card-btn btn-blue" type="button">
+                    Хочу так же
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="work-item section-item work-card effect__click swiper-slide"
+            >
+              <div class="card__front card__front-1">
+                <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
+                <h3 class="work-item-title title-item">
+                  Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова
+                  д.2б ​
+                </h3>
+                <p class="work-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой
+                </p>
+                <div class="work-btn-blur btn-blur btn-blur-mob">
+                  <button
+                    class="work-btn btn-blue btn-blue-mob effect__click"
+                    type="button"
+                  >
+                    Подробнее
+                    <img src="./img/icon/ArrowLineUpRight.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="card__back card__back-1">
+                <h4>Были выполнены следующие виды работ:</h4>
+                <ul>
+                  <li>Установка окон ПВХ</li>
+                  <li>Стяжка пола- Укладка ламината</li>
+                  <li>Укладка напольной плитки</li>
+                  <li>Замена радиаторов отопления</li>
+                  <li>Звукоизоляция потолка и полов</li>
+                  <li>Монтаж натяжных потолков</li>
+                  <li>с/у облицован плиткой</li>
+                </ul>
+                <p>Срок работ: 4 месяца</p>
+                <div class="card-btn-blur btn-blur">
+                  <a href="#order" class="card-btn btn-blue" type="button">
+                    Хочу так же
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="work-item section-item work-card effect__click swiper-slide"
+            >
+              <div class="card__front card__front-1">
+                <img class="work-item-img" src="./img/work1.jpg" alt="photo" />
+                <h3 class="work-item-title title-item">
+                  Ремонт 3-х комн. квартиры 88 м2, на ул. Михаила Драгоманова
+                  д.2б ​
+                </h3>
+                <p class="work-item-text text-item">
+                  Полный спектр услуг, начиная от дизайн-проектирования и
+                  заканчивая окончательной отделкой
+                </p>
+                <div class="work-btn-blur btn-blur btn-blur-mob">
+                  <button
+                    class="work-btn btn-blue btn-blue-mob effect__click"
+                    type="button"
+                  >
+                    Подробнее
+                    <img src="./img/icon/ArrowLineUpRight.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="card__back card__back-1">
+                <h4>Были выполнены следующие виды работ:</h4>
+                <ul>
+                  <li>Установка окон ПВХ</li>
+                  <li>Стяжка пола- Укладка ламината</li>
+                  <li>Укладка напольной плитки</li>
+                  <li>Замена радиаторов отопления</li>
+                  <li>Звукоизоляция потолка и полов</li>
+                  <li>Монтаж натяжных потолков</li>
+                  <li>с/у облицован плиткой</li>
+                </ul>
+                <p>Срок работ: 4 месяца</p>
+                <div class="card-btn-blur btn-blur">
+                  <a href="#order" class="card-btn btn-blue" type="button">
+                    Хочу так же
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="work-item section-item swiper-slide">
               <img class="work-item-img" src="./img/work2.jpg" alt="photo" />
               <h3 class="work-item-title title-item">
                 Евроремонт 2-х комнатной квартиры 66 м2, на ул. Героев Космоса
@@ -556,7 +842,7 @@
                 После завершения проекта наши клиенты оценили все этапы, включая
                 дизайн-проектирование и окончательную отделку.
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -860,7 +1146,7 @@
           </div>
         </div>
       </section>
-      <section class="request-calc section-b">
+      <section class="request-calc section-b" id="order">
         <div class="request-new">
           <div>
             <h2 class="steps-title section-title">Оставьте заявку</h2>

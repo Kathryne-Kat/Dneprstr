@@ -80,3 +80,43 @@ $(document).ready(function () {
     $(".mobile-menu").removeClass("is-active");
   });
 });
+
+const refs = {
+  menuAbout: document.querySelector(".header-menu-list-about"),
+  openAbout: document.getElementById("menu-about"),
+};
+
+const openMenuAbout = (e) => {
+  refs.openAbout.classList.remove("is-hidden");
+  refs.menuAbout.classList.add("active");
+};
+
+const closeMenuAbout = () => {
+  refs.openAbout.classList.add("is-hidden");
+  refs.menuAbout.classList.remove("active");
+};
+const closeMenuAboutTwo = (e) => {
+  if (e.relatedTarget === refs.openAbout) {
+    return;
+  }
+  // closeMenuAbout();
+};
+
+refs.menuAbout.addEventListener("mouseover", openMenuAbout);
+refs.menuAbout.addEventListener("mouseout", closeMenuAboutTwo);
+refs.openAbout.addEventListener("mouseleave", closeMenuAbout);
+
+(function () {
+  var cards = document.querySelectorAll(".work-card.effect__click");
+  for (var i = 0, len = cards.length; i < len; i++) {
+    var card = cards[i];
+    clickListener(card);
+  }
+
+  function clickListener(card) {
+    card.addEventListener("click", function () {
+      var c = this.classList;
+      c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+    });
+  }
+})();
